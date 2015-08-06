@@ -1,0 +1,13 @@
+package com.multithreading;
+
+public class AccountTesting implements Runnable {
+
+	 Account acc = new Account();  
+	  
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

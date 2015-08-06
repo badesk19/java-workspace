@@ -1,0 +1,12 @@
+package com.allusers;
+import com.utility.*;
+public class User1 {	//user class
+
+	public static void main(String args[]) // main method
+	{
+	Calc calObject=new Calc(); // object creation
+	System.out.println("Square Root="+calObject.findRoot(-20));	//finding square root
+	
+	}
+	
+}

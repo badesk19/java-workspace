@@ -1,0 +1,10 @@
+package com.printable;
+
+public class Utility implements Printable {
+
+	
+		
+	}
+
+	
+}

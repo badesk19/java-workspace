@@ -1,0 +1,17 @@
+package com.printable;
+
+public class Utility implements Printable {
+
+
+	public void printAll(Printable p[])
+	{
+		
+		
+	}
+
+	
+		
+	}
+
+	
+

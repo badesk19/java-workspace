@@ -1,0 +1,51 @@
+package com.multithreading;
+
+public class AccountTesting implements Runnable {
+
+	 Account acc = new Account();  
+	  
+	@Override
+	public void run() {
+		for (int x = 0; x < 5; x++) {  
+			
+			withdrawlMoney(100);  
+  
+            if (acc.getBalance() < 0) {  
+  
+                System.out.println("account is overdrawn!");  
+  
+            }  
+  
+		
+	}
+		
+		
+		}
+
+	private void withdrawlMoney(int amount) {
+		if (acc.getBalance() >= amount) {  
+			  
+            System.out.println(Thread.currentThread().getName() + " has started withdrawing");  
+  
+            try {  
+  
+                Thread.sleep(200);  
+  
+            } catch (InterruptedException ex) {  
+  
+            }  
+  
+            acc.withdraw(amount);  
+  
+            System.out.println(Thread.currentThread().getName() + " has completed the withdrawal");  
+  
+        } else {  
+  
+            System.out.println("Not enough in account for " + Thread.currentThread().getName() + " to withdraw " + acct.getBalance());  
+  
+        }  
+  
+		
+	}
+
+}

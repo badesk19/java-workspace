@@ -1,0 +1,17 @@
+package com.exceptionhandling;
+
+public class NegativeNumberException {
+
+	public void findSqrRoot(int number)
+	{
+		
+		public NegativeNumberException()
+		{
+			
+			
+		}
+	
+		
+		
+	}
+}

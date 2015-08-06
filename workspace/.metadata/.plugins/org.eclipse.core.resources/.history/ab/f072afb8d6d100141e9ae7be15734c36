@@ -1,0 +1,11 @@
+package com.collection;
+
+public class HashmapTester {
+
+	public static void main(String[] args) {
+		
+		HashMap<Book,Integer> hashMap=new HashMap<Book,Integer>();
+
+	}
+
+}

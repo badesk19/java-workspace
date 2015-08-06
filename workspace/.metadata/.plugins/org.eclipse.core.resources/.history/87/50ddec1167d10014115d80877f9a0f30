@@ -1,0 +1,27 @@
+/*Create a sorted set of Employee objects.(Sort on Emp ID)*/
+package com.collection;
+
+import java.util.TreeSet;
+
+public class EmployeeCollection {
+public static void main(String args[])
+{
+
+
+	Employee emp1=new Employee(1, "Ankit", "ankit@cybage.com");
+	Employee emp2=new Employee(6,"Anuj","anuj@cybage.com");
+	Employee emp3=new Employee(7,"Anuj","anuj@cybage.com");
+	Employee emp4=new Employee(8,"Anuj","anuj@cybage.com");
+	  TreeSet<Employee> employeeSet = new TreeSet<Employee>(new EmpIdComparision());
+	  employeeSet.add(emp1);
+	  employeeSet.add(emp2);
+	 employeeSet.add(emp3);
+	 employeeSet.add(emp4);
+	 for(Employee emp:employeeSet)
+	 {
+	 System.out.println(emp);
+	 }
+	
+
+}
+}

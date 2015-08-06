@@ -1,0 +1,5 @@
+package com.commandlinearg;
+
+public class CmdLineArg {
+
+}

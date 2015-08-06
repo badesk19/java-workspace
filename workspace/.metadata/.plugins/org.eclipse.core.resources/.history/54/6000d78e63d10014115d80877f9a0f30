@@ -1,0 +1,16 @@
+package com.exceptionhandling;
+
+public class NegativeNumberException {
+
+	public void findSqrRoot(int number)
+	{
+		
+		if(number<0)
+			{
+			
+			throw NegativeNumberException();
+			}
+		
+		
+	}
+}

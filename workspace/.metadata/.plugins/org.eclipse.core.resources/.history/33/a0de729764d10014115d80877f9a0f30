@@ -1,0 +1,11 @@
+package com.collection;
+
+public class EmployeeCollection {
+public static void main(String args[])
+{
+
+	Employee emp1=new Employee(1, "Ankit", "ankit@cybage.com");
+	Employee emp2=new Employee(2,"Anuj","anuj@cybage.com");
+
+}
+}

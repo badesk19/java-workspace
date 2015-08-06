@@ -1,0 +1,13 @@
+package com.multithreading;
+
+public class Bank  implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

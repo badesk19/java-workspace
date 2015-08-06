@@ -1,0 +1,34 @@
+package com.printable;
+
+import com.animals.Animal;
+import com.shapes.Shape;
+
+
+public class PrintableTester {
+
+	public static void main(String args[])
+	{
+		Animal animal=new Cat();
+		Animal animal=new Dog();
+		Shape shapes=new Shape();
+		Printable p1[]=new Printable[2];
+		
+		p1[0]=animal;
+		p1[1]=shapes; 
+		
+	
+		Utility util=new Utility();
+		for(int i=0;i<2;i++)
+		{
+			p1[i].print(p1);
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+}

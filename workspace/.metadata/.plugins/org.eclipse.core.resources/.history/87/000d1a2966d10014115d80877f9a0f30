@@ -1,0 +1,8 @@
+package com.collection;
+
+import java.util.Comparator;
+
+public class EmpIdComparision implements Comparator<Employee> {
+
+	
+}

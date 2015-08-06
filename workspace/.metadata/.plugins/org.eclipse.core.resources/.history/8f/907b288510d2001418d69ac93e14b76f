@@ -1,0 +1,23 @@
+package com.printable;
+
+public class Utility implements Printable {
+Printable p1;
+
+	public void printAll(Printable p[])
+	{
+	
+		
+	}
+
+	@Override
+	public void print(Printable[] p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+		
+	}
+
+	
+

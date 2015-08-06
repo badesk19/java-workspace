@@ -1,0 +1,20 @@
+package com.collection;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class HashmapTester {
+
+	public static void main(String[] args) {
+		
+		HashMap<Book,Integer> hashMap=new HashMap<Book,Integer>();
+		hashMap.put(new Book("Java", "Rk", 200), 600);
+		hashMap.put(new Book("C++", "Balaguru", 300), 500);
+		hashMap.put(new Book("C", "Kanetkar", 200),400);
+		
+		Set<Book> key=hashMap.keySet();
+		
+
+	}
+
+}

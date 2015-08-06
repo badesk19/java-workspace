@@ -1,0 +1,16 @@
+package com.printable;
+
+public class Utility {
+
+	@Override
+	public void print(Printable[] p) {
+		System.out.println("In Utility");
+		
+	}
+
+	
+		
+	}
+
+	
+

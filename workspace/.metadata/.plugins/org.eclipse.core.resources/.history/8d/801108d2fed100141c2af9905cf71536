@@ -1,0 +1,13 @@
+/*Call System.gc(), check whether GC runs or not*/
+package com.gctesting;
+
+public class GCTesting {
+
+	
+	public static void main(String args[])
+	{
+		System.gc();
+		System.out.println("GC Called");
+		
+	}
+}

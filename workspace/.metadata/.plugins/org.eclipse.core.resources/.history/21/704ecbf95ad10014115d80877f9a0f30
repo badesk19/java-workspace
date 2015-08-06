@@ -1,0 +1,8 @@
+package com.gctesting;
+
+public class GCTesting {
+
+	
+	public static void main(String args[])
+	{}
+}

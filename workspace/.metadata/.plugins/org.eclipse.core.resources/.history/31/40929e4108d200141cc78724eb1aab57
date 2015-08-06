@@ -1,0 +1,80 @@
+
+/*write a program to print a data from database with column names*/
+package com.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+
+public class Employee {
+	String employeeName;
+	int empoyeeId;
+	double salary;
+	
+	
+	public Employee() {
+	}
+
+	public Employee(String employeeName, int empoyeeId, double salary) {
+		this.employeeName = employeeName;
+		this.empoyeeId = empoyeeId;
+		this.salary = salary;
+	}
+	
+	Connection con;
+	PreparedStatement psmt;
+	
+	public void viewEmpRecords()
+	{
+		try {
+		//	Class.forName("com.mysql.jdbc.Driver");
+			String url ="jdbc:mysql://localhost:3306/test";
+			try {
+				con= DriverManager.getConnection(url,"root","root");
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		//}// catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+	//		e.printStackTrace();
+		//}
+		try 
+		{
+		psmt=con.prepareStatement("select * from emp");
+		ResultSet res=psmt.executeQuery();
+		ResultSetMetaData resm=res.getMetaData();
+		
+		int columnCount=resm.getColumnCount();
+
+		
+		String arr[]=new String[5];
+		for(int j=1;j<=columnCount;j++)
+		{
+			System.out.println(arr[j-1]=resm.getColumnName(j));
+			
+		}
+		
+		while(res.next())
+		{
+			System.out.println("Employee Id: "+res.getInt(arr[0]));
+			System.out.println("Employee Name: "+res.getString(arr[1]));
+		System.out.println("Salary: "+res.getDouble(arr[2]));
+			
+			
+		}
+	
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		
+		
+	//}
+	
+
+//}

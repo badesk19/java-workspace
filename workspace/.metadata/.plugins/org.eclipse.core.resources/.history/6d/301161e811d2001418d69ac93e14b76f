@@ -1,0 +1,55 @@
+/*Create a class:  Bank Account 
+Create subclasses:  1. Saving  &  2.Current 
+Rate of interest is different for different types of account.*/
+
+
+package com.bank;		//package name
+
+public class BankAccount {		//class name
+	
+	String accountHolderName;
+	String address;
+	double rateOfInterest;
+	double balance;
+	
+	public BankAccount() {		//default constructor
+	}
+	public BankAccount(String accountHolderName, String address, double balance,double rateOfInterest) { //parameterized constructor
+		this.accountHolderName = accountHolderName;
+		this.address = address;
+		this.balance = balance;
+		this.rateOfInterest=rateOfInterest;
+	}
+	
+	public double calculateInterest(double rateOfInterest)
+	{
+		return rateOfInterest;
+		
+	}
+	
+	
+}
+
+class Saving extends BankAccount
+{
+	double rateOfInterest;
+	@Override
+	public double calculateInterest(double rateOfInterest) {
+		
+		return rateOfInterest;
+	}
+	
+}
+
+class current extends BankAccount
+{
+	double rateOfInterest;
+	
+@Override
+public double calculateInterest(double rateOfInterest) {
+	
+	return rateOfInterest;
+	
+}
+	
+}

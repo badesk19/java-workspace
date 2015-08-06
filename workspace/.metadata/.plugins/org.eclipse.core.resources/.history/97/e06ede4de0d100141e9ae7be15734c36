@@ -1,0 +1,30 @@
+package com.multithreading;
+
+public class AccountTesting implements Runnable {
+
+	 Account acc = new Account();  
+	  
+	@Override
+	public void run() {
+		for (int x = 0; x < 5; x++) {  
+			
+			withdrawlMoney(100);  
+  
+            if (acc.getBalance() < 0) {  
+  
+                System.out.println("account is overdrawn!");  
+  
+            }  
+  
+		
+	}
+		
+		
+		}
+
+	private void withdrawlMoney(int i) {
+		
+		
+	}
+
+}

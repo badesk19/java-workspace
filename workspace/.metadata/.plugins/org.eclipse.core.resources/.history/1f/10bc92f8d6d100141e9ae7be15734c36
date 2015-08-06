@@ -1,0 +1,18 @@
+package com.collection;
+
+public class Book {
+
+	String name;
+	String author;
+	String price;
+	
+	public Book() {
+	}
+
+	public Book(String name, String author, String price) {
+		this.name = name;
+		this.author = author;
+		this.price = price;
+	}
+	
+}

@@ -1,0 +1,20 @@
+package com.overriding;
+
+public class OverridingTester {
+
+	public static void main(String args[])
+	{
+		Employee emp=new Employee(1, "Sagar", "sagar@cybage.com");
+		System.out.println(emp);
+		Employee emp1=new Employee(1, "Sagar", "sagar@cybage.com");
+		System.out.println(emp1.equals(emp));
+		
+		Account acc=new Account("Tom","Pune");
+		Account acc1=new Account("Tom","Pune");
+		System.out.println(acc);
+		System.out.println(acc.equals(acc1));
+		
+		
+	}
+	
+}

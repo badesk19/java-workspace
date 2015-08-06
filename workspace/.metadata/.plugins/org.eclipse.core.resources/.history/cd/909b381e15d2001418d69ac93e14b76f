@@ -1,0 +1,14 @@
+package com.bank;
+
+public class BankTester {
+
+	public static void main(String args[])
+	{
+	BankAccount bankObject=new Saving("Sagar", "Pune", 5000, 5);
+	
+	bankObject.calculateTotalAmount(bankObject.getBalance());
+	
+	}
+	
+	
+}
